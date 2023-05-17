@@ -26,5 +26,7 @@ const all = async () => {
 };
 
 btn.addEventListener("click", () => {
-  all();
+  images.forEach((val) => {
+      output.insertAdjacentHTML("beforeend", imageLoad(val.url));
+    });
 });
